@@ -1,6 +1,18 @@
 # Verified Wages MCP
 
+[![MCPize](https://mcpize.com/badge/@josh/verified-wages)](https://mcpize.com/mcp/verified-wages)
+
 Current, source-cited US minimum wage, tipped wage, and FLSA overtime constants for AI agents. Federal + 50 states + DC + territories.
+
+## Connect via MCPize
+
+Use this MCP server instantly with no local installation:
+
+```bash
+npx -y mcpize connect @josh/verified-wages --client claude
+```
+
+Or connect at: **https://mcpize.com/mcp/verified-wages**
 
 ## Why this exists
 
@@ -56,4 +68,3 @@ Tests: `python test_server.py` - hand-computed fixtures against the DOL tables, 
 ## Compliance posture
 
 Educational reference only - **not legal advice**. State labor offices are authoritative. Exemptions, youth/training wages, and small-employer carve-outs are noted where DOL notes them but not evaluated by the tools.
-
