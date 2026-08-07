@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#1e293b"/>
+  <g stroke="#94a3b8" stroke-width="6" stroke-linecap="round">
+    <line x1="28" y1="96" x2="52" y2="96"/>
+    <line x1="52" y1="76" x2="76" y2="76"/>
+    <line x1="76" y1="56" x2="100" y2="56"/>
+  </g>
+  <g stroke="#22c55e" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M30 88 L58 64 L86 44"/>
+    <path d="M74 40 L88 42 L86 56" stroke-linejoin="round"/>
+  </g>
+  <text x="64" y="34" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#f8fafc" text-anchor="middle">$/hr</text>
+</svg>
