@@ -1,0 +1,592 @@
+{
+ "meta": {
+  "dataset": "us_minimum_wages",
+  "as_of": "2026-07-01",
+  "last_verified": "2026-08-06",
+  "verified_by": "Two-pass verification: (1) DOL WHD State Minimum Wage Laws page (updated 2026-07-01); (2) DOL WHD Tipped Employees table (revised 2026-07-01) - basic-rate column independently confirms every jurisdiction; cross-checked against Paycom/Rippling/Mappr 2026 compilations. Discrepancy found and resolved: one commercial site served stale pre-July Oregon rates.",
+  "scope_v1": "Federal + 50 states + DC + GU/PR/VI. City/county ordinances EXCLUDED (v2). Tipped minimums INCLUDED.",
+  "disclaimer": "Educational reference only, not legal advice. State labor offices are authoritative. Local ordinances may set higher rates."
+ },
+ "federal": {
+  "basic_hourly": 7.25,
+  "effective_since": "2009-07-24",
+  "overtime": "1.5x regular rate after 40 hours/workweek (FLSA)",
+  "tipped_cash_minimum": 2.13,
+  "source": "FLSA, 29 U.S.C. 206; federal minimum $7.25 since 2009-07-24"
+ },
+ "jurisdictions": {
+  "AL": {
+   "rate": null,
+   "note": "No state minimum wage law; federal $7.25 applies to FLSA-covered employers",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "AK": {
+   "rate": 14.0,
+   "note": "Increased from 13.00 effective 2026-07-01; daily OT after 8h; not applicable <4 employees",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "AZ": {
+   "rate": 15.15,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 3.0,
+    "cash_minimum": 12.15,
+    "tipped_definition": "Not specified",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "AR": {
+   "rate": 11.0,
+   "note": "Employers with 4+ employees",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 8.37,
+    "cash_minimum": 2.63,
+    "tipped_definition": "Not specified",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "CA": {
+   "rate": 16.9,
+   "note": "Daily OT 8h (1.5x)/12h (2x); annual formula adjustment",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "CO": {
+   "rate": 15.16,
+   "note": "Daily OT after 12h; applies to listed industries",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 3.02,
+    "cash_minimum": 12.14,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "CT": {
+   "rate": 16.94,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "hotel_restaurant_cash": 6.38,
+    "bartender_cash": 8.23,
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "DE": {
+   "rate": 15.0,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 12.77,
+    "cash_minimum": 2.23,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "DC": {
+   "rate": 18.4,
+   "note": "Adjusted annually July 1 by formula; increased from 17.95 on 2026-07-01",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 8.1,
+    "cash_minimum": 10.3,
+    "tipped_definition": "Not specified; cash wage floor = 56% of standard minimum",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "FL": {
+   "rate": 14.0,
+   "scheduled": {
+    "rate": 15.0,
+    "effective": "2026-09-30",
+    "source": "Fla. Const. art. X sec. 24 (Amendment 2, 2020)"
+   },
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 3.02,
+    "cash_minimum": 10.98,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "GA": {
+   "rate": 5.15,
+   "note": "State law 6+ employees; FLSA-covered employers pay federal 7.25",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "GA state wage law does not apply to tipped employees; FLSA scheme governs",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "HI": {
+   "rate": 16.0,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 1.25,
+    "cash_minimum": 14.75,
+    "tipped_definition": "Tip credit only if combined pay >= minimum + $7.00",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "ID": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 3.9,
+    "cash_minimum": 3.35,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "IL": {
+   "rate": 15.0,
+   "note": "Employers of 4+ excluding family",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 6.0,
+    "cash_minimum": 9.0,
+    "tipped_definition": "40% credit; not specified",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "IN": {
+   "rate": 7.25,
+   "note": "Employers of 2+",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "IA": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 2.9,
+    "cash_minimum": 4.35,
+    "tipped_definition": "40% credit; more than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "KS": {
+   "rate": 7.25,
+   "note": "Excludes FLSA-covered employment",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "KY": {
+   "rate": 7.25,
+   "note": "7th-day OT rule",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "LA": {
+   "rate": null,
+   "note": "No state minimum wage law; federal applies",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "ME": {
+   "rate": 15.1,
+   "note": "Annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 7.55,
+    "cash_minimum": 7.55,
+    "tipped_definition": "More than $191/mo; 50% credit",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MD": {
+   "rate": 15.0,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 11.37,
+    "cash_minimum": 3.63,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MA": {
+   "rate": 15.0,
+   "note": "Must be >= federal + 0.50",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 8.25,
+    "cash_minimum": 6.75,
+    "tipped_definition": "More than $20/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MI": {
+   "rate": 13.73,
+   "scheduled": {
+    "rate": 15.0,
+    "effective": "2027-01-01",
+    "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)"
+   },
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 8.24,
+    "cash_minimum": 5.49,
+    "tipped_definition": "Cash wage rising annually to 50% of minimum by 2031",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MN": {
+   "rate": 11.41,
+   "note": "OT after 48h/week; annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MS": {
+   "rate": null,
+   "note": "No state minimum wage law; federal applies",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MO": {
+   "rate": 15.0,
+   "note": "Retail/service <500k gross exempt",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 7.5,
+    "cash_minimum": 7.5,
+    "tipped_definition": "50% credit",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "MT": {
+   "rate": 10.85,
+   "note": "4.00 for non-FLSA businesses with gross <= 110k",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NE": {
+   "rate": 15.0,
+   "note": "Employers of 4+",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 12.87,
+    "cash_minimum": 2.13,
+    "tipped_definition": "Not specified",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NV": {
+   "rate": 12.0,
+   "note": "Daily 8h OT for earners <1.5x minimum",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NH": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 3.98,
+    "cash_minimum": 3.27,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NJ": {
+   "rate": 15.92,
+   "note": "15.23 for <6 employees and seasonal; annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 9.87,
+    "cash_minimum": 6.05,
+    "tipped_definition": "More than $30/mo; advance-notice conditions apply",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NM": {
+   "rate": 12.0,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 9.0,
+    "cash_minimum": 3.0,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NY": {
+   "rate": 16.0,
+   "regional": {
+    "NYC, Nassau, Suffolk, Westchester": 17.0
+   },
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "note": "Tipped rates vary by region and industry; see dol.ny.gov/minimum-wage-0",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "NC": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "ND": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 2.39,
+    "cash_minimum": 4.86,
+    "tipped_definition": "33% credit; more than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "OH": {
+   "rate": 11.0,
+   "note": "7.25 for employers with gross receipts < 405k; annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 5.5,
+    "cash_minimum": 5.5,
+    "tipped_definition": "More than $30/mo; small-receipts employers at 7.25",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "OK": {
+   "rate": 7.25,
+   "note": "2.00 for small employers not otherwise covered; adopts federal by reference",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 5.12,
+    "cash_minimum": 2.13,
+    "tipped_definition": "FLSA-excluded small employers differ",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "OR": {
+   "rate": 15.55,
+   "regional": {
+    "Portland Metro": 16.8,
+    "Non-urban counties": 14.55
+   },
+   "note": "Adjusted annually July 1",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "PA": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 4.42,
+    "cash_minimum": 2.83,
+    "tipped_definition": "$135/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "RI": {
+   "rate": 16.0,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 12.11,
+    "cash_minimum": 3.89,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "SC": {
+   "rate": null,
+   "note": "No state minimum wage law; federal applies",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "SD": {
+   "rate": 11.85,
+   "note": "Annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 5.92,
+    "cash_minimum": 5.93,
+    "tipped_definition": "More than $35/mo; 50% credit",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "TN": {
+   "rate": null,
+   "note": "No state minimum wage law; federal applies",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "TX": {
+   "rate": 7.25,
+   "note": "Adopts federal by reference; excludes FLSA-covered",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "UT": {
+   "rate": 7.25,
+   "note": "Excludes FLSA-covered",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "VT": {
+   "rate": 14.42,
+   "note": "Employers of 2+; annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 7.21,
+    "cash_minimum": 7.21,
+    "tipped_definition": "More than $120/mo; 50% credit",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "VA": {
+   "rate": 12.77,
+   "note": "Annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 10.64,
+    "cash_minimum": 2.13,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "WA": {
+   "rate": 17.13,
+   "note": "Annual formula",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "WV": {
+   "rate": 8.75,
+   "note": "Employers of 6+ at one location",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 6.13,
+    "cash_minimum": 2.62,
+    "tipped_definition": "70% credit; 6+ employee employers",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "WI": {
+   "rate": 7.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 4.92,
+    "cash_minimum": 2.33,
+    "tipped_definition": "Opportunity-employee (under 20, first 90 days) cash wage 2.13",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "WY": {
+   "rate": 5.15,
+   "note": "FLSA-covered employers pay federal 7.25",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": 2.13,
+    "max_tip_credit": 5.12,
+    "note": "Federal FLSA scheme applies",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "GU": {
+   "rate": 9.25,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "cash_minimum": "full state minimum wage before tips (no tip credit)",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "PR": {
+   "rate": 10.5,
+   "note": "FLSA-covered non-PRMWA employers: federal 7.25",
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 8.37,
+    "cash_minimum": 2.13,
+    "tipped_definition": "More than $30/mo",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  },
+  "VI": {
+   "rate": 10.5,
+   "source": "DOL WHD State Minimum Wage Laws, dol.gov/agencies/whd/minimum-wage/state (updated 2026-07-01)",
+   "tipped": {
+    "max_tip_credit": 6.3,
+    "cash_minimum": 4.2,
+    "tipped_definition": "40% of minimum as cash wage",
+    "source": "DOL WHD Minimum Wages for Tipped Employees, dol.gov/agencies/whd/state/minimum-wage/tipped (revised 2026-07-01)"
+   }
+  }
+ }
+}
